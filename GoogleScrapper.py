@@ -24,6 +24,7 @@ for links in soup.find_all('a'):
     if link[0:7] == "/url?q=" and link != 'youtube':
         urlf = (link[7:len(link)])
         print(urlf)
+		print("Israr")
 
 for para in soup.find_all('div', attrs={'class': 'BNeawe s3v9rd AP7Wnd'}):
     desc = para.text
